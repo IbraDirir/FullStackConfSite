@@ -265,36 +265,88 @@ Free pizza for everyone
 <div  id="register" class="modal fade">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header bg-info">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
         <h4 class="modal-title">Register for Full Stac Conf</h4>
       </div>
-      <div class="modal-body">
-    <!--registration Form-->
-        <form class="form-inline">
-            <h5 class="m-b-2">Basic Info</h5>
-        <fieldset class="form-group">
-         <label for="name">Name:</label>
-         <input type="text" class="form-control" id="name" placeholder="Name">
-          </fieldset>
-          <fieldset class="form-group">
-            <label for="mail">Email</label>
-            <input type="emial" class="form-control" id="mail">
-          </fieldset>
-          <fieldset class="form-group">
-              <label for="role">Job Role:</label>
-        <select class="form-control" id="role">
-            <option value="full stack js developer">Full Stack JavaScript               Developer</option>
-            <option value="front end developer">Front End Developer</option>
-            <option value="back end developer">Back End Developer</option>
-            <option value="designer">Designer</option>
-            <option value="student">Student</option>
-        </select>
+<div class="modal-body">
+      <!--registration Form-->
+ <div class="alert alert-warning alert-dismissible fade in" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>Hurry!</strong> Early Bird registration ends in 2 days</div>
+    <form>
+    <h5 class="m-b-2">Basic Info</h5>
+    <fieldset class="form-group">
+    <label for="name">Name:</label>
+    <input type="text" class="form-control" id="name" placeholder="Name">
+    </fieldset>
+    <fieldset class="form-group">
+       <label for="mail">Email</label>
+       <input type="emial" class="form-control" id="mail">
+    </fieldset>
+      <fieldset class="form-group">
+         <label for="role">Job Role:</label>
+        <select c-select class="form-control" id="role">
+         <option value="full stack js developer">Full Stack JavaScript               Developer</option>
+         <option value="front end developer">Front End Developer</option>
+         <option value="back end developer">Back End Developer</option>
+         <option value="designer">Designer</option>
+         <option value="student">Student</option>
+       </select>
+     </fieldset>
+        <hr class="m-y-2">
+     <h5>Which topics interests you most</h5>
+<div class="form-group">
+    <label class="c-input c-checkbox c-inputs-stacked">
+      <input type="checkbox">
+      <span class="c-indicator"></span>
+      Javascript Frameworks
+    </label>
+      <label class="c-input c-checkbox c-inputs-stacked">
+      <input type="checkbox">
+      <span class="c-indicator"></span>
+      Javascript Libararies
+    </label>
+      <label class="c-input c-checkbox c-inputs-stacked">
+      <input type="checkbox">
+      <span class="c-indicator"></span>
+        Node.js
+    </label>
+      <label class="c-input c-checkbox c-inputs-stacked">
+      <input type="checkbox">
+      <span class="c-indicator"></span>
+        Build Tools
+    </label>
+       </label>
+      <label class="c-input c-checkbox c-inputs-stacked">
+      <input type="checkbox">
+      <span class="c-indicator"></span>
+         ES2050
+        </label>
+    </div>
+<hr class="m-b-2">
+   <h5 class="m-b-2">Payment Info</h5>
+<div class="row">
+  <div class="col-lg-6">
+    <label for="cc-num">Card Number:</label>
+    <input class="form-control" id="cc-num" type="text">
+  </div>
 
-          </fieldset>
-        </form>
+  <div class="col-lg-3">
+    <label for="zip">Zip Code:</label>
+    <input class="form-control" id="zip" type="text">
+  </div>
+
+  <div class="col-lg-3">
+    <label for="cvv">CVV:</label>
+    <input class="form-control" id="cvv" type="text">
+  </div>
+</div>
+    </form>
   <!--//registration Form-->
       </div>
 
